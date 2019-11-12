@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lessons learned from building an automation suite</title>
+<meta name="author" content="Grigore, Ștefan and Rebeja, Petru"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Lessons learned from building an automation suite</h1><h2 class="author">Grigore, Ștefan and Rebeja, Petru</h2><p class="date">Created: 2019-11-11 Mon 14:02</p>
+</section>
+<section>
+<section id="slide-org0ac5c06">
+<h2 id="org0ac5c06">How it all started</h2>
+<div class="outline-text-2" id="text-org0ac5c06">
+</div>
+</section>
+<section id="slide-orgd4fee16">
+<h3 id="orgd4fee16">TMV project description</h3>
+<blockquote>
+<p>
+TMV is an application meant to aid municipalities in requesting changes in the governamental data on entities and objects pertaining to the said municipality.
+</p>
+</blockquote>
+</section>
+<section id="slide-org72624fe">
+<h3 id="org72624fe">TMV project description</h3>
+<pre class="example">
+Once upon a time there was a guy named John and after a certain intervention John became Jane.
+
+In order to legalize her transition, Jane needs to go to municipality and change her name.
+The clerk at the municipality, uses TMV to create a request to change the name and sex in governamental records.
+</pre>
+</section>
+<section id="slide-org6be647c">
+<h3 id="org6be647c">Why?</h3>
+<p>
+Issues in the previous test automation suite:
+</p>
+<ul>
+<li class="fragment appear">Handling explicit waits.</li>
+<li class="fragment appear">Maintainability.</li>
+<li class="fragment appear">Readability.</li>
+<li class="fragment appear">Need for a challenge.</li>
+
+</ul>
+</section>
+<section id="slide-orgc62d1bb">
+<h3 id="orgc62d1bb">The start</h3>
+<ul>
+<li class="fragment appear">After SoC course came the idea <code>This can be done better</code>.</li>
+<li class="fragment appear">The idea was pitched during a planning meeting.</li>
+<li class="fragment appear">After some discussions PO gave it the green light.</li>
+
+</ul>
+<aside class="notes">
+<p>
+After SoC course I (Ștefan) decide that the old automation suite needed a rework.
+Also I needed a challenge to improve my coding skills.
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-orgbca2e2f">
+<h2 id="orgbca2e2f">How did we reach the desired results</h2>
+</section>
+</section>
+<section>
+<section id="slide-org71b87ba">
+<h2 id="org71b87ba">Results &amp; statistics</h2>
+<div class="outline-text-2" id="text-org71b87ba">
+</div>
+</section>
+<section id="slide-org5adcbcd">
+<h3 id="org5adcbcd">KPIs</h3>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">Old value</th>
+<th scope="col" class="org-right">New value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Total test duration</td>
+<td class="org-right">24 min 29 s</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Total tests</td>
+<td class="org-right">105</td>
+<td class="org-right">105</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Passed tests</td>
+<td class="org-right">78</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Failed tests</td>
+<td class="org-right">25</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Skipped</td>
+<td class="org-right">2</td>
+<td class="org-right">2</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Total LOC</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Readability</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">U+2611</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section>
+<section id="slide-org9709df1">
+<h2 id="org9709df1">Lessons learned</h2>
+<div class="outline-text-2" id="text-org9709df1">
+</div>
+</section>
+<section id="slide-org1a1058b">
+<h3 id="org1a1058b">From QA perspective</h3>
+</section>
+<section id="slide-org3677ffe">
+<h3 id="org3677ffe">From DEV perspective</h3>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>

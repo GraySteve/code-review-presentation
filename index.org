@@ -1,0 +1,59 @@
+#+options: toc:nil date:nil num:nil
+#+title: Lessons learned from building an automation suite
+#+date: <2019-11-11 Mon>
+#+author: Grigore, Ștefan and Rebeja, Petru
+#+email: prebeja@NBKR003825
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 26.3 (Org mode 9.2.6)
+* How it all started
+** TMV project description
+   #+begin_quote
+   TMV is an application meant to aid municipalities in requesting changes in the governamental data on entities and objects pertaining to the said municipality.
+   #+end_quote
+** TMV project description
+   #+begin_example
+   Once upon a time there was a guy named John and after a certain intervention John became Jane.
+
+   In order to legalize her transition, Jane needs to go to municipality and change her name.
+   The clerk at the municipality, uses TMV to create a request to change the name and sex in governamental records.
+   #+end_example
+** Why?
+   Issues in the previous test automation suite:
+   #+ATTR_REVEAL: :frag (appear)
+   - Handling explicit waits.
+   - Maintainability.
+   - Readability.
+   - Need for a challenge.
+** The start
+   #+ATTR_REVEAL: :frag (appear)
+   - After SoC course came the idea =This can be done better=.
+   - The idea was pitched during a planning meeting.
+   - After some discussions PO gave it the green light.
+  #+begin_notes
+  After SoC course I (Ștefan) decide that the old automation suite needed a rework.
+  Also I needed a challenge to improve my coding skills.
+  #+end_notes
+* How did we reach the desired results
+** The refactoring
+   #+ATTR_REVEAL: :frag (appear)
+   - All started with a refactoring
+** The review
+* Results & statistics
+** KPIs
+   |                     |   Old value | New value |
+   |---------------------+-------------+-----------|
+   | Total test duration | 24 min 29 s |           |
+   |---------------------+-------------+-----------|
+   | Total tests         |         105 |       105 |
+   |---------------------+-------------+-----------|
+   | Passed tests        |          78 |           |
+   | Failed tests        |          25 |           |
+   | Skipped             |           2 |         2 |
+   |---------------------+-------------+-----------|
+   | Total LOC           |             |           |
+   | Readability         |             |    U+2611 |
+* Lessons learned
+** From QA perspective
+** From DEV perspective
