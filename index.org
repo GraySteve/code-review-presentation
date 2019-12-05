@@ -7,7 +7,6 @@
 #+select_tags: export
 #+exclude_tags: noexport
 #+creator: Emacs 26.3 (Org mode 9.2.6)
-#+reveal_root: https://revealjs.com/
 * How it all started
 ** TMV project description
    #+begin_quote
@@ -39,7 +38,8 @@
 * How did we reach the desired results
 ** The refactoring
    #+ATTR_REVEAL: :frag (appear)
-   - All started with a refactoring
+   - All started by refactoring the old solution of automated tests by implementing George C. model(Show pictures of solution before and after).
+   - Treating special cases from one model to another. Such as waits , class initialize steps and so on.
 ** The review
 * Results & statistics
 ** KPIs
