@@ -2,7 +2,6 @@
 #+title: Lessons learned from building an automation suite
 #+date: <2019-11-11 Mon>
 #+author: Grigore, Ștefan and Rebeja, Petru
-#+email: prebeja@NBKR003825
 #+language: en
 #+select_tags: export
 #+exclude_tags: noexport
