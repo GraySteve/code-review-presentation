@@ -43,6 +43,9 @@
      - Class initialize steps
      - etc.
 ** The review
+   (Show picture of the 2 of us working together )
+   - We worked with informal method, the  "Over-the-shoulder" review.
+   - The work-flow of the tests
 * Results & statistics
 ** KPIs
    |                     |   Old value | New value |
