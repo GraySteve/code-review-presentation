@@ -25,7 +25,7 @@
      - Handling explicit waits.
      - Maintainability.
      - Readability.
-   - Need for a challenge.
+   - Current automation didn't fulfilled all the project needs.
 ** The start
    #+ATTR_REVEAL: :frag (appear)
    - After SoC course came the idea =This can be done better=.
