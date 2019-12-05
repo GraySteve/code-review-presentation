@@ -19,11 +19,12 @@
    The clerk at the municipality, uses TMV to create a request to change the name and sex in governamental records.
    #+end_example
 ** Why?
-   Issues in the previous test automation suite:
    #+ATTR_REVEAL: :frag (appear)
-   - Handling explicit waits.
-   - Maintainability.
-   - Readability.
+   - Issues in the previous test automation suite:
+     #+ATTR_REVEAL: :frag (appear)
+     - Handling explicit waits.
+     - Maintainability.
+     - Readability.
    - Need for a challenge.
 ** The start
    #+ATTR_REVEAL: :frag (appear)
