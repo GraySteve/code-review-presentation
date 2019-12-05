@@ -42,10 +42,27 @@
      - Waits,
      - Class initialize steps
      - etc.
-** The review
-   (Show picture of the 2 of us working together )
-   - We worked with informal method, the  "Over-the-shoulder" review.
-   - The work-flow of the tests
+** The review: "over-the-shoulder"
+   #+ATTR_HTML: :width 75%
+   [[file:img/over-shoulder-review.png]]
+   #+ATTR_HTML: :style font-size: small
+   Image from: [[https://hellogiggles.com/reviews-coverage/tv-shows/the-office-auction/]]
+   #+begin_notes
+   We worked with informal method, the  "Over-the-shoulder" review.
+   #+end_notes
+** The review process
+   #+ATTR_REVEAL: :frag (appear)
+   - Describe the intent
+   - Describe the changes
+   - Review & adjust
+   #+begin_notes
+   1. Describe the intent
+      I want to get ahold of name of the attached document from a report.
+   2. Describe the changes
+      To do so, I used a XPath selector to grab the table with attachments and iterate over all rows to get the value from column X.
+   3. Review & adjust
+      Review & apply suggested changes.
+   #+end_notes
 * Results & statistics
 ** Before & after
    #+ATTR_HTML: :width 70%

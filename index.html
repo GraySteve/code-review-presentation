@@ -26,24 +26,24 @@
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide">
-<h1 class="title">Lessons learned from building an automation suite</h1><h2 class="author">Grigore, Ștefan and Rebeja, Petru</h2><p class="date">Created: 2019-12-05 Thu 15:21</p>
+<h1 class="title">Lessons learned from building an automation suite</h1><h2 class="author">Grigore, Ștefan and Rebeja, Petru</h2><p class="date">Created: 2019-12-05 Thu 15:52</p>
 </section>
 <section>
-<section id="slide-org603ce47">
-<h2 id="org603ce47">How it all started</h2>
-<div class="outline-text-2" id="text-org603ce47">
+<section id="slide-orga8350cb">
+<h2 id="orga8350cb">How it all started</h2>
+<div class="outline-text-2" id="text-orga8350cb">
 </div>
 </section>
-<section id="slide-org1f3e79a">
-<h3 id="org1f3e79a">TMV project description</h3>
+<section id="slide-org6d54e10">
+<h3 id="org6d54e10">TMV project description</h3>
 <blockquote>
 <p>
 TMV is an application meant to aid municipalities in requesting changes in the governamental data on entities and objects pertaining to the said municipality.
 </p>
 </blockquote>
 </section>
-<section id="slide-orgba4be5f">
-<h3 id="orgba4be5f">TMV project description</h3>
+<section id="slide-org64d3d28">
+<h3 id="org64d3d28">TMV project description</h3>
 <pre class="example">
 Once upon a time there was a guy named John and after a certain intervention John became Jane.
 
@@ -51,8 +51,8 @@ In order to legalize her transition, Jane needs to go to municipality and change
 The clerk at the municipality, uses TMV to create a request to change the name and sex in governamental records.
 </pre>
 </section>
-<section id="slide-org5a2e1ab">
-<h3 id="org5a2e1ab">Why?</h3>
+<section id="slide-org967f49e">
+<h3 id="org967f49e">Why?</h3>
 <p>
 Issues in the previous test automation suite:
 </p>
@@ -64,8 +64,8 @@ Issues in the previous test automation suite:
 
 </ul>
 </section>
-<section id="slide-org5a78fbf">
-<h3 id="org5a78fbf">The start</h3>
+<section id="slide-orgfb50d51">
+<h3 id="orgfb50d51">The start</h3>
 <ul>
 <li class="fragment appear">After SoC course came the idea <code>This can be done better</code>.</li>
 <li class="fragment appear">The idea was pitched during a planning meeting.</li>
@@ -82,13 +82,13 @@ Also I needed a challenge to improve my coding skills.
 </section>
 </section>
 <section>
-<section id="slide-org85d0611">
-<h2 id="org85d0611">How did we reach the desired results</h2>
-<div class="outline-text-2" id="text-org85d0611">
+<section id="slide-org0d98589">
+<h2 id="org0d98589">How did we reach the desired results</h2>
+<div class="outline-text-2" id="text-org0d98589">
 </div>
 </section>
-<section id="slide-orgd91a6d3">
-<h3 id="orgd91a6d3">The refactoring</h3>
+<section id="slide-orgbdbb68c">
+<h3 id="orgbdbb68c">The refactoring</h3>
 <ul>
 <li class="fragment appear">Migrate old solution to the model presented by George Chirilă.</li>
 <li class="fragment appear">Adapt the model to the particularities of our project:
@@ -101,26 +101,61 @@ Also I needed a challenge to improve my coding skills.
 
 </ul>
 </section>
-<section id="slide-org99a4991">
-<h3 id="org99a4991">The review</h3>
+<section id="slide-org07bacb0">
+<h3 id="org07bacb0">The review: "over-the-shoulder"</h3>
+
+<div class="figure">
+<p><img src="img/over-shoulder-review.png" alt="over-shoulder-review.png" width="75%" />
+</p>
+</div>
+<p style="font-size: small">
+Image from: <a href="https://hellogiggles.com/reviews-coverage/tv-shows/the-office-auction/" style="font-size: small">https://hellogiggles.com/reviews-coverage/tv-shows/the-office-auction/</a>
+</p>
+<aside class="notes">
+<p>
+We worked with informal method, the  "Over-the-shoulder" review.
+</p>
+
+</aside>
+</section>
+<section id="slide-orgb272885">
+<h3 id="orgb272885">The review process</h3>
+<ul>
+<li class="fragment appear">Describe the intent</li>
+<li class="fragment appear">Describe the changes</li>
+<li class="fragment appear">Review &amp; adjust</li>
+
+</ul>
+<aside class="notes">
+<ol>
+<li>Describe the intent
+I want to get ahold of name of the attached document from a report.</li>
+<li>Describe the changes
+To do so, I used a XPath selector to grab the table with attachments and iterate over all rows to get the value from column X.</li>
+<li>Review &amp; adjust
+Review &amp; apply suggested changes.</li>
+
+</ol>
+
+</aside>
 </section>
 </section>
 <section>
-<section id="slide-org6539744">
-<h2 id="org6539744">Results &amp; statistics</h2>
-<div class="outline-text-2" id="text-org6539744">
+<section id="slide-org367e08d">
+<h2 id="org367e08d">Results &amp; statistics</h2>
+<div class="outline-text-2" id="text-org367e08d">
 </div>
 </section>
-<section id="slide-org769f9c1">
-<h3 id="org769f9c1">Before &amp; after</h3>
+<section id="slide-org4d1f225">
+<h3 id="org4d1f225">Before &amp; after</h3>
 
 <div class="figure">
 <p><img src="img/before-and-after.png" alt="before-and-after.png" width="70%" />
 </p>
 </div>
 </section>
-<section id="slide-org7bd5ca0">
-<h3 id="org7bd5ca0">KPIs</h3>
+<section id="slide-org4faf97f">
+<h3 id="org4faf97f">KPIs</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -188,25 +223,16 @@ Also I needed a challenge to improve my coding skills.
 </section>
 </section>
 <section>
-<section id="slide-org8b2d0de">
-<h2 id="org8b2d0de">Lessons learned</h2>
-<div class="outline-text-2" id="text-org8b2d0de">
+<section id="slide-orgdaef4d4">
+<h2 id="orgdaef4d4">Lessons learned</h2>
+<div class="outline-text-2" id="text-orgdaef4d4">
 </div>
 </section>
-<section id="slide-org771f513">
-<h3 id="org771f513">From QA perspective</h3>
-<ul>
-<li class="fragment appear">This needs to be done more often</li>
-
-</ul>
+<section id="slide-org1ba8c4b">
+<h3 id="org1ba8c4b">From QA perspective</h3>
 </section>
-<section id="slide-org0011bd9">
-<h3 id="org0011bd9">From DEV perspective</h3>
-<ul>
-<li class="fragment appear">My abstraction is not like your abstraction</li>
-<li class="fragment appear">This needs to be done more often</li>
-
-</ul>
+<section id="slide-org3fb6805">
+<h3 id="org3fb6805">From DEV perspective</h3>
 </section>
 </section>
 </div>
