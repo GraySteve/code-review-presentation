@@ -47,6 +47,9 @@
    - We worked with informal method, the  "Over-the-shoulder" review.
    - The work-flow of the tests
 * Results & statistics
+** Before & after
+   #+ATTR_HTML: :width 70%
+   [[file:img/before-and-after.png]]
 ** KPIs
    |                     |   Old value | New value |
    |---------------------+-------------+-----------|
