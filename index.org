@@ -37,8 +37,11 @@
 * How did we reach the desired results
 ** The refactoring
    #+ATTR_REVEAL: :frag (appear)
-   - All started by refactoring the old solution of automated tests by implementing George C. model(Show pictures of solution before and after).
-   - Treating special cases from one model to another. Such as waits , class initialize steps and so on.
+   - Migrate old solution to the model presented by George Chirilă.
+   - Adapt the model to the particularities of our project:
+     - Waits,
+     - Class initialize steps
+     - etc.
 ** The review
 * Results & statistics
 ** KPIs

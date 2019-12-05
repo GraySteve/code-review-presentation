@@ -7,9 +7,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="https://revealjs.com/css/reveal.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
 
-<link rel="stylesheet" href="https://revealjs.com/css/theme/black.css" id="theme"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/black.css" id="theme"/>
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -17,7 +17,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://revealjs.com/css/print/pdf.css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -26,24 +26,24 @@
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide">
-<h1 class="title">Lessons learned from building an automation suite</h1><h2 class="author">Grigore, Ștefan and Rebeja, Petru</h2><p class="date">Created: 2019-12-05 Thu 14:22</p>
+<h1 class="title">Lessons learned from building an automation suite</h1><h2 class="author">Grigore, Ștefan and Rebeja, Petru</h2><p class="date">Created: 2019-12-05 Thu 14:41</p>
 </section>
 <section>
-<section id="slide-org0b73175">
-<h2 id="org0b73175">How it all started</h2>
-<div class="outline-text-2" id="text-org0b73175">
+<section id="slide-orgafa9c34">
+<h2 id="orgafa9c34">How it all started</h2>
+<div class="outline-text-2" id="text-orgafa9c34">
 </div>
 </section>
-<section id="slide-org8213864">
-<h3 id="org8213864">TMV project description</h3>
+<section id="slide-org869bc99">
+<h3 id="org869bc99">TMV project description</h3>
 <blockquote>
 <p>
 TMV is an application meant to aid municipalities in requesting changes in the governamental data on entities and objects pertaining to the said municipality.
 </p>
 </blockquote>
 </section>
-<section id="slide-orgd35a6a9">
-<h3 id="orgd35a6a9">TMV project description</h3>
+<section id="slide-org901d8cd">
+<h3 id="org901d8cd">TMV project description</h3>
 <pre class="example">
 Once upon a time there was a guy named John and after a certain intervention John became Jane.
 
@@ -51,8 +51,8 @@ In order to legalize her transition, Jane needs to go to municipality and change
 The clerk at the municipality, uses TMV to create a request to change the name and sex in governamental records.
 </pre>
 </section>
-<section id="slide-org05dbbeb">
-<h3 id="org05dbbeb">Why?</h3>
+<section id="slide-org6af558c">
+<h3 id="org6af558c">Why?</h3>
 <p>
 Issues in the previous test automation suite:
 </p>
@@ -64,8 +64,8 @@ Issues in the previous test automation suite:
 
 </ul>
 </section>
-<section id="slide-org9216eea">
-<h3 id="org9216eea">The start</h3>
+<section id="slide-org08e7139">
+<h3 id="org08e7139">The start</h3>
 <ul>
 <li class="fragment appear">After SoC course came the idea <code>This can be done better</code>.</li>
 <li class="fragment appear">The idea was pitched during a planning meeting.</li>
@@ -82,30 +82,37 @@ Also I needed a challenge to improve my coding skills.
 </section>
 </section>
 <section>
-<section id="slide-org0669531">
-<h2 id="org0669531">How did we reach the desired results</h2>
-<div class="outline-text-2" id="text-org0669531">
+<section id="slide-org0d5f57d">
+<h2 id="org0d5f57d">How did we reach the desired results</h2>
+<div class="outline-text-2" id="text-org0d5f57d">
 </div>
 </section>
-<section id="slide-org8a37402">
-<h3 id="org8a37402">The refactoring</h3>
+<section id="slide-org13d51e8">
+<h3 id="org13d51e8">The refactoring</h3>
 <ul>
-<li class="fragment appear">All started with a refactoring</li>
+<li class="fragment appear">Migrate old solution to the model presented by George Chirilă.</li>
+<li class="fragment appear">Adapt the model to the particularities of our project:
+<ul>
+<li>Waits,</li>
+<li>Class initialize steps</li>
+<li>etc.</li>
+
+</ul></li>
 
 </ul>
 </section>
-<section id="slide-orgd2f5ec0">
-<h3 id="orgd2f5ec0">The review</h3>
+<section id="slide-org70d8aeb">
+<h3 id="org70d8aeb">The review</h3>
 </section>
 </section>
 <section>
-<section id="slide-orgc97df7a">
-<h2 id="orgc97df7a">Results &amp; statistics</h2>
-<div class="outline-text-2" id="text-orgc97df7a">
+<section id="slide-org361bc9b">
+<h2 id="org361bc9b">Results &amp; statistics</h2>
+<div class="outline-text-2" id="text-org361bc9b">
 </div>
 </section>
-<section id="slide-orgce9c0a3">
-<h3 id="orgce9c0a3">KPIs</h3>
+<section id="slide-org98d8f2e">
+<h3 id="org98d8f2e">KPIs</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -173,22 +180,22 @@ Also I needed a challenge to improve my coding skills.
 </section>
 </section>
 <section>
-<section id="slide-org80ac35b">
-<h2 id="org80ac35b">Lessons learned</h2>
-<div class="outline-text-2" id="text-org80ac35b">
+<section id="slide-org50b99b7">
+<h2 id="org50b99b7">Lessons learned</h2>
+<div class="outline-text-2" id="text-org50b99b7">
 </div>
 </section>
-<section id="slide-org51d9a94">
-<h3 id="org51d9a94">From QA perspective</h3>
+<section id="slide-orgaf4f918">
+<h3 id="orgaf4f918">From QA perspective</h3>
 </section>
-<section id="slide-org58a89d9">
-<h3 id="org58a89d9">From DEV perspective</h3>
+<section id="slide-org1a005cf">
+<h3 id="org1a005cf">From DEV perspective</h3>
 </section>
 </section>
 </div>
 </div>
-<script src="https://revealjs.com/lib/js/head.min.js"></script>
-<script src="https://revealjs.com/js/reveal.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
 <script>
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
@@ -214,11 +221,11 @@ transitionSpeed: 'default',
 
 // Optional libraries used to extend reveal.js
 dependencies: [
- { src: 'https://revealjs.com/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'https://revealjs.com/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'https://revealjs.com/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'https://revealjs.com/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
 
 });
 </script>
