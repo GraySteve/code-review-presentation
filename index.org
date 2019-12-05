@@ -67,19 +67,15 @@
 ** Before & after
    #+ATTR_HTML: :width 70%
    [[file:img/before-and-after.png]]
-** KPIs
-   |                     |   Old value | New value |
-   |---------------------+-------------+-----------|
-   | Total test duration | 24 min 29 s |           |
-   |---------------------+-------------+-----------|
-   | Total tests         |         105 |       105 |
-   |---------------------+-------------+-----------|
-   | Passed tests        |          78 |           |
-   | Failed tests        |          25 |           |
-   | Skipped             |           2 |         2 |
-   |---------------------+-------------+-----------|
-   | Total LOC           |             |           |
-   | Readability         |             |    U+2611 |
+** Best example
+   |                       | Old value | New Value |
+   |-----------------------+-----------+-----------|
+   | Maintainability index |        32 |        69 |
+   | Cyclomatic complexity |        27 |         1 |
+   | Class coupling        |        17 |        10 |
+   | Lines of code         |       159 |        18 |
+   #+begin_notes
+   #+end_notes
 * Lessons learned
 ** From QA perspective
 ** From DEV perspective
