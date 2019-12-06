@@ -13,10 +13,13 @@
    #+end_quote
 ** TMV project description
    #+begin_example
-   Once upon a time there was a guy named John and after a certain intervention John became Jane.
+   Once upon a time there was a guy named John.
+   After a certain intervention John became Jane.
 
-   In order to legalize her transition, Jane needs to go to municipality and change her name.
-   The clerk at the municipality, uses TMV to create a request to change the name and sex in governamental records.
+   Now, Jane needs to go to municipality and change her name.
+   At the municipality the clerk uses TMV issue a request to change:
+   - Name from John to Jane
+   - Sex from M to F.
    #+end_example
 ** Why?
    - Issues in the previous test automation suite:

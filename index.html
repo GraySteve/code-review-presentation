@@ -26,33 +26,36 @@
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide">
-<h1 class="title">Lessons learned from building an automation suite</h1><h2 class="author">Grigore, Ștefan and Rebeja, Petru</h2><p class="date">Created: 2019-12-05 Thu 17:47</p>
+<h1 class="title">Lessons learned from building an automation suite</h1><h2 class="author">Grigore, Ștefan and Rebeja, Petru</h2><p class="date">Created: 2019-12-06 Fri 10:44</p>
 </section>
 <section>
-<section id="slide-org5f3cb6a">
-<h2 id="org5f3cb6a">How it all started</h2>
-<div class="outline-text-2" id="text-org5f3cb6a">
+<section id="slide-orgebcf373">
+<h2 id="orgebcf373">How it all started</h2>
+<div class="outline-text-2" id="text-orgebcf373">
 </div>
 </section>
-<section id="slide-orge34e57d">
-<h3 id="orge34e57d">TMV project description</h3>
+<section id="slide-org0a6cd75">
+<h3 id="org0a6cd75">TMV project description</h3>
 <blockquote>
 <p>
 TMV is an application meant to aid municipalities in requesting changes in the governamental data on entities and objects pertaining to the said municipality.
 </p>
 </blockquote>
 </section>
-<section id="slide-org99d1e31">
-<h3 id="org99d1e31">TMV project description</h3>
+<section id="slide-orga827d2a">
+<h3 id="orga827d2a">TMV project description</h3>
 <pre class="example">
-Once upon a time there was a guy named John and after a certain intervention John became Jane.
+Once upon a time there was a guy named John.
+After a certain intervention John became Jane.
 
-In order to legalize her transition, Jane needs to go to municipality and change her name.
-The clerk at the municipality, uses TMV to create a request to change the name and sex in governamental records.
+Now, Jane needs to go to municipality and change her name.
+At the municipality the clerk uses TMV issue a request to change:
+- Name from John to Jane
+- Sex from M to F.
 </pre>
 </section>
-<section id="slide-org9ec7534">
-<h3 id="org9ec7534">Why?</h3>
+<section id="slide-orgd817f5d">
+<h3 id="orgd817f5d">Why?</h3>
 <ul>
 <li>Issues in the previous test automation suite:
 <ul>
@@ -65,8 +68,8 @@ The clerk at the municipality, uses TMV to create a request to change the name a
 
 </ul>
 </section>
-<section id="slide-org2658885">
-<h3 id="org2658885">The start</h3>
+<section id="slide-org58822be">
+<h3 id="org58822be">The start</h3>
 <ul>
 <li class="fragment appear">After SoC course came the idea <code>This can be done better</code>.</li>
 <li class="fragment appear">The idea was pitched during a planning meeting.</li>
@@ -83,13 +86,13 @@ Also I needed a challenge to improve my coding skills.
 </section>
 </section>
 <section>
-<section id="slide-org7693bc7">
-<h2 id="org7693bc7">How did we reach the desired results</h2>
-<div class="outline-text-2" id="text-org7693bc7">
+<section id="slide-org2033bba">
+<h2 id="org2033bba">How did we reach the desired results</h2>
+<div class="outline-text-2" id="text-org2033bba">
 </div>
 </section>
-<section id="slide-orgd4d02d6">
-<h3 id="orgd4d02d6">The refactoring</h3>
+<section id="slide-org4085959">
+<h3 id="org4085959">The refactoring</h3>
 <ul>
 <li class="fragment appear">Migrate old solution to the model presented by George Chirilă.</li>
 <li class="fragment appear">Adapt the model to the particularities of our project:
@@ -102,8 +105,8 @@ Also I needed a challenge to improve my coding skills.
 
 </ul>
 </section>
-<section id="slide-org69f3331">
-<h3 id="org69f3331">The review: "over-the-shoulder"</h3>
+<section id="slide-org47f0724">
+<h3 id="org47f0724">The review: "over-the-shoulder"</h3>
 
 <div class="figure">
 <p><img src="img/over-shoulder-review.png" alt="over-shoulder-review.png" width="75%" />
@@ -119,8 +122,8 @@ We worked with informal method, the  "Over-the-shoulder" review.
 
 </aside>
 </section>
-<section id="slide-org92c4dae">
-<h3 id="org92c4dae">The review process</h3>
+<section id="slide-orgc25207c">
+<h3 id="orgc25207c">The review process</h3>
 <ul>
 <li class="fragment appear">Describe the intent</li>
 <li class="fragment appear">Describe the changes</li>
@@ -142,21 +145,21 @@ Review &amp; apply suggested changes.</li>
 </section>
 </section>
 <section>
-<section id="slide-org6efaf8e">
-<h2 id="org6efaf8e">Results &amp; statistics</h2>
-<div class="outline-text-2" id="text-org6efaf8e">
+<section id="slide-org6c3f276">
+<h2 id="org6c3f276">Results &amp; statistics</h2>
+<div class="outline-text-2" id="text-org6c3f276">
 </div>
 </section>
-<section id="slide-orga3e3531">
-<h3 id="orga3e3531">Before &amp; after</h3>
+<section id="slide-org34bda37">
+<h3 id="org34bda37">Before &amp; after</h3>
 
 <div class="figure">
 <p><img src="img/before-and-after.png" alt="before-and-after.png" width="70%" />
 </p>
 </div>
 </section>
-<section id="slide-org2d367d5">
-<h3 id="org2d367d5">Best example</h3>
+<section id="slide-org00ddb7c">
+<h3 id="org00ddb7c">Best example</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -206,16 +209,16 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-orgec9ce1c">
-<h2 id="orgec9ce1c">Lessons learned</h2>
-<div class="outline-text-2" id="text-orgec9ce1c">
+<section id="slide-org26f76ce">
+<h2 id="org26f76ce">Lessons learned</h2>
+<div class="outline-text-2" id="text-org26f76ce">
 </div>
 </section>
-<section id="slide-orga541530">
-<h3 id="orga541530">From QA perspective</h3>
+<section id="slide-orgb1d8f18">
+<h3 id="orgb1d8f18">From QA perspective</h3>
 </section>
-<section id="slide-orgb45e3b2">
-<h3 id="orgb45e3b2">From DEV perspective</h3>
+<section id="slide-org37c7164">
+<h3 id="org37c7164">From DEV perspective</h3>
 </section>
 </section>
 </div>
