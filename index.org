@@ -16,7 +16,7 @@
    Once upon a time there was a guy named John.
    After a certain intervention John became Jane.
 
-   Now, Jane needs to go to municipality and change her name.
+   Now, Jane needs to go to municipality and change her info.
    At the municipality the clerk uses TMV issue a request to change:
    - Name from John to Jane
    - Sex from M to F.
