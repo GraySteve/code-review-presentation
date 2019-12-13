@@ -83,4 +83,15 @@
 ** From QA perspective
 ** From DEV perspective
 ** Insightful
+   #+ATTR_REVEAL: :frag (appear)
+   - Working that close to someone gives you an insight into how they think about the project.
+   - That broadens your own perception.
 ** Gratifying
+   - Number of hours spent with Ștefan: *a lot*.
+   - Number of dirty jokes: *even more*.
+   - The satisfaction of contributing to a /new and unknown/ project: *priceless*.
+* Conclusions
+  - It was nice and fun experience (until we had to give the presentation).
+  - We recommend everyone to try this.
+* Questions?
+* Thank you!
