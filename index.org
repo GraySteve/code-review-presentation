@@ -1,7 +1,7 @@
 #+options: toc:nil date:nil num:nil
-#+title: Lessons learned from building an automation suite
-#+date: <2019-11-11 Mon>
-#+author: Grigore, Ștefan and Rebeja, Petru
+#+title: Lessons Learned from an Automation Suite
+#+date: <2019-12-13 Fri>
+#+author: Ștefan Grigore
 #+language: en
 #+select_tags: export
 #+exclude_tags: noexport
@@ -30,9 +30,9 @@
      - Did not fulfill all the project needs.
 ** The start
    #+ATTR_REVEAL: :frag (appear)
-   - After SoC course came the idea =This can be done better=.
-   - The idea was pitched during a planning meeting.
-   - After some discussions PO gave it the green light.
+   - The idea came after attending a =School of Centric= course.
+   - The refactoring was pitched during a planning meeting.
+   - After some discussions the Product Owner gave it green light.
   #+begin_notes
   After SoC course I (Ștefan) decide that the old automation suite needed a rework.
   Also I needed a challenge to improve my coding skills.
@@ -40,7 +40,7 @@
 * How did we reach the desired results
 ** The refactoring
    #+ATTR_REVEAL: :frag (appear)
-   - Migrate old solution to the model presented by George Chirilă.
+   - Migrate old solution to the model presented =School of Centric= course.
    - Adapt the model to the particularities of our project:
      - Waits,
      - Class initialize steps
@@ -82,3 +82,5 @@
 * Lessons learned
 ** From QA perspective
 ** From DEV perspective
+** Insightful
+** Gratifying
